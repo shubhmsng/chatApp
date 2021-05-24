@@ -1,5 +1,5 @@
 # chatApp
 
-# This chat application use tab session to login.
+### This chat application uses tab session to login.
 
-# run this code inside the server.
+### run this code inside the server.
