@@ -2,7 +2,7 @@
 
 ### This chat application uses tab session to login.
 
-### run this code inside the server.
+### run this code inside the server directory.
 
 ### if you are new user you can start with any username and passwod
 
