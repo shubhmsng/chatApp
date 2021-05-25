@@ -4,8 +4,8 @@
 
 ### run this code inside the server directory.
 
-### if you are new user you can start with any username and passwod
+### if you are a new user you can start with any username and passwod.
 
-### if you are existing user then use same credentials.
+### if you are a existing user then use same credentials.
 
 ### create 2 users to start chatting.
