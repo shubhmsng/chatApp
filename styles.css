@@ -165,12 +165,10 @@ li a:hover {
 }
 
 .chatbox-input-container {
-    position: absolute;
-    bottom: 0.5rem;
+    position: relative;
     display: flex;
     flex: 1;
     padding: 5px;
-    width: calc(100vw - 350px);
 }
 
 .send-message {
