@@ -55,26 +55,32 @@ function handleLogin() {
         e.preventDefault();
         const name = document.getElementById('name').value;
         const password  = document.getElementById('password').value
-            let status = services.addNewUser(name, password);
-            if(status.name === "AccessError") {
-                alert("Incorrect username/password");
-            } else if(status.id){
-                let viewChatsHTML = `
-                    <div class="sender">${status?.name}</div>
-                    <div class="container">
-                        <div class="sidebar" id="sidebar">
-                        </div>
-                        <div class="chat-container" id="chat-container">
-                        </div>
+        
+        if(!name || !password) {
+            alert("username and password is required");
+            return;
+        }
+        
+        let status = services.addNewUser(name, password);
+        if(status.name === "AccessError") {
+            alert("Incorrect username/password");
+        } else if(status.id){
+            let viewChatsHTML = `
+                <div class="sender">${status?.name}</div>
+                <div class="container">
+                    <div class="sidebar" id="sidebar">
                     </div>
-                `;
-                root.innerHTML = viewChatsHTML;
-                sender = new User(status.name, status.password, status.id);
-                let active_users = services.getActiveUsers(); 
-                displayUsers(active_users);
-            } else {
-                alert(status.message);
-            }
+                    <div class="chat-container" id="chat-container">
+                    </div>
+                </div>
+            `;
+            root.innerHTML = viewChatsHTML;
+            sender = new User(status.name, status.password, status.id);
+            let active_users = services.getActiveUsers(); 
+            displayUsers(active_users);
+        } else {
+            alert(status.message);
+        }
     });    
 }
 
