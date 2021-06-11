@@ -1,6 +1,6 @@
 # chatApp
 
-https://shubhmsng.github.io/chatApp/
+To try out this app visit https://shubhmsng.github.io/chatApp/ .
 
 This chat application uses tab session to login.
 
