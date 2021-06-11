@@ -1,9 +1,7 @@
 # chatApp
 
-To try out this app, visit https://shubhmsng.github.io/chatApp .
+To try out this app, visit https://shubhmsng.github.io/chatApp.
 
-* This chat application uses tab session to login.
-* This application uses module js script so host this code inside the server directory.
-* If you are a new user you can start a session with any username and passwod.
-* If you are a existing user then use same credentials.
-* Create 2 users to start chatting.
+In this application, a user has to start a session by entering a username and a password. This session will create an account for the user logging in for the first time. Then open a new browser tab and start another session by using a different username and password. When the first user refreshes the tab, the available user's list will be updated. Now, both the users can chat with each other.
+
+This app is based on vanilla HTML, CSS and javascript.
