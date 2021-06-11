@@ -8,3 +8,4 @@ This app is based on HTML5, CSS3 and vanilla javascript.
 
 ![alt text](login.png "Login Screen")
 ![alt text](first_session.png "first session screen")
+![alt text](second_session.png "second session screen")
